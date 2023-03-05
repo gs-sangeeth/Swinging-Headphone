@@ -402,6 +402,14 @@ PrefabInstance:
       propertyPath: grappleToAll
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5852922556912920020, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: launchToPoint
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5852922556912920020, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: autoCongifureDistance
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5852922557334202369, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
       propertyPath: m_Name
       value: Ball
