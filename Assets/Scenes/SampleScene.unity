@@ -285,7 +285,7 @@ MonoBehaviour:
     m_Bits: 1
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
-  m_RenderPostProcessing: 0
+  m_RenderPostProcessing: 1
   m_Antialiasing: 0
   m_AntialiasingQuality: 2
   m_StopNaN: 0
@@ -305,7 +305,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.13207549, g: 0.13207549, b: 0.13207549, a: 0}
+  m_BackGroundColor: {r: 0.0754717, g: 0.0754717, b: 0.0754717, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -505,6 +505,38 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2512863856824268484, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512863856824268484, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: m_LocalAABB.m_Center.x
+      value: 0.27495575
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512863856824268484, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: m_LocalAABB.m_Center.y
+      value: -0.42284918
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512863856824268484, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: m_LocalAABB.m_Extent.x
+      value: 2.0221233
+      objectReference: {fileID: 0}
+    - target: {fileID: 2512863856824268484, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: m_LocalAABB.m_Extent.y
+      value: 1.9911184
+      objectReference: {fileID: 0}
+    - target: {fileID: 2954603468093345881, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269567657181313342, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: m_ShapeTexture
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3269567657181313342, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5852922556912920020, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
       propertyPath: m_camera
       value: 
@@ -649,7 +681,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 0.7075472, g: 0.2309541, b: 0.2309541, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -826,6 +858,55 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5852922557334202371, guid: 2bebfa43cb16a0347ad915d015702428, type: 3}
   m_PrefabInstance: {fileID: 653349117}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &866737848
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866737850}
+  - component: {fileID: 866737849}
+  m_Layer: 0
+  m_Name: Global Volume
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &866737849
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866737848}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IsGlobal: 1
+  priority: 0
+  blendDistance: 0
+  weight: 1
+  sharedProfile: {fileID: 11400000, guid: 43ca4ece6f34c0447bdebc28cdcfe6b5, type: 2}
+--- !u!4 &866737850
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866737848}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.6983366, y: -1.903718, z: -1.4674975}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1211829242
 GameObject:
   m_ObjectHideFlags: 0
