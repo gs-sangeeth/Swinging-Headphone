@@ -887,7 +887,7 @@ MonoBehaviour:
   gunHolder: {fileID: 5852922557334202371}
   gunPivot: {fileID: 5852922557353229834}
   firePoint: {fileID: 5852922556301440421}
-  rotateOverTime: 0
+  rotateOverTime: 1
   rotationSpeed: 10.5
   hasMaxDistance: 0
   maxDistance: 20

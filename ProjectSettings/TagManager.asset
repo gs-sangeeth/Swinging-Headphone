@@ -3,7 +3,9 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - RythmCenter
+  - Note
   layers:
   - Default
   - TransparentFX
@@ -43,4 +45,7 @@ TagManager:
     locked: 0
   - name: headphone
     uniqueID: 2881494461
+    locked: 0
+  - name: UI
+    uniqueID: 3012796177
     locked: 0
