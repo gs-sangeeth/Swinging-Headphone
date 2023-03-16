@@ -50,12 +50,14 @@ public class GrapplingGun : MonoBehaviour
 
     public Rigidbody2D ballRigidbody;
 
+    private BeatColourChanger grabbable;
+
 
     private void Start()
     {
         grappleRope.enabled = false;
         m_springJoint2D.enabled = false;
-        ballRigidbody.gravityScale = 1;
+        //ballRigidbody.gravityScale = 1;
     }
 
     private void Update()
@@ -89,6 +91,7 @@ public class GrapplingGun : MonoBehaviour
         else if (Input.GetKeyUp(KeyCode.Mouse0))
         {
             grappleRope.enabled = false;
+            grabbable.grabbedCurrently = false;
             m_springJoint2D.enabled = false;
             ballRigidbody.gravityScale = 1;
         }
@@ -123,6 +126,8 @@ public class GrapplingGun : MonoBehaviour
                 grapplePoint = _hit.point;
                 DistanceVector = grapplePoint - (Vector2)gunPivot.position;
                 grappleRope.enabled = true;
+                grabbable = _hit.collider.gameObject.GetComponent<BeatColourChanger>();
+                grabbable.grabbedCurrently = true;
             }
         }
     }
